@@ -1,0 +1,59 @@
+@font-face {
+  font-family: "Golos";
+  src: url(./assests/fonts/GolosText-Regular.woff2);
+}
+:root{
+  --lite_grey:rgba(224, 255, 255, 1)
+}
+body {
+  background-color: #e0e0e0;
+  font-family: Golos, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.clock-display {
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 10px 10px 20px #a8a8a8,
+    -10px -10px 20px #ffffff;
+  padding: 20px;
+  width: 30%;
+  margin: 1%;
+}
+
+.news-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0.5%;
+}
+
+.news-item {
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 10px 10px 20px #a8a8a8,
+    -10px -10px 20px #ffffff;
+
+  transition: box-shadow 0.3s;
+  padding: 1%;
+  margin: 1%;
+}
+
+.news-item:hover {
+  box-shadow: 5px 5px 10px #a8a8a8,
+    -5px -5px 10px #ffffff;
+    background-color: var(--lite_grey);
+    transition: ease 0.5s;
+}
+
+a {
+  text-decoration: none;
+}
